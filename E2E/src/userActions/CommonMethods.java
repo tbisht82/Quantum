@@ -52,9 +52,10 @@ public class CommonMethods extends CommonPageElements {
 	public boolean isElementPresent(By element) {
 		try {
 			driver.findElement(element);
+			System.out.println("inside isElementPresent");
 			return true;
 		}
-		catch(NoSuchElementException e1) {
+		catch(NoSuchElementException e) {
 			return false;
 		}
 	}
